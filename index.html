@@ -2,46 +2,66 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Chengyima | Environment Art Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UE5 环境地编作品集</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
-        body{background:#111;color:#eee;max-width:1100px;margin:0 auto;padding:40px 20px}
-        h1{font-size:36px;margin-bottom:12px}
-        .desc{color:#aaa;margin-bottom:40px;max-width:700px}
-        .work{margin-bottom:60px}
-        .work img, .work video{width:100%;border-radius:8px;margin:16px 0}
-        h2{margin:24px 0 8px;color:#fff}
-        p{color:#ccc;line-height:1.6}
-        .contact{margin-top:80px;padding-top:30px;border-top:1px solid #333}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+        body{background:#121212;color:#eee;line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:40px 20px}
+        .about{margin-bottom:60px}
+        .about h1{font-size:32px;margin-bottom:12px}
+        .about p{color:#bbb;font-size:17px;max-width:800px}
+        .skills{margin-top:16px;color:#aaa}
+        .project{background:#1e1e1e;border-radius:12px;padding:24px;margin-bottom:32px}
+        .project h2{margin-bottom:12px;color:#fff}
+        .project p{color:#ddd;margin-bottom:16px}
+        .media{width:100%;border-radius:8px;overflow:hidden;margin-bottom:16px}
+        video,img{width:100%;display:block}
+        footer{margin-top:80px;color:#888;text-align:center;padding-bottom:20px}
     </style>
 </head>
 <body>
-    <h1>Chengyima｜UE5 环境地编</h1>
-    <p class="desc">Environment Artist，擅长白盒搭建、资产整合、材质与光影氛围制作，熟悉Nanite、Lumen，掌握AI辅助资产工作流。</p>
+    <div class="container">
+        <section class="about">
+            <h1>Chengyima｜UE5 环境地编</h1>
+            <p>UE5环境地编，擅长白盒搭建、资产整合、材质光影与场景性能优化，可制作写实与风格化场景。</p>
+            <div class="skills">
+                <strong>技能：</strong> Unreal Engine 5｜地形雕刻｜资产整合｜光影调试｜性能优化
+            </div>
+        </section>
 
-    <div class="work">
-        <h2>🌲 写实森林场景</h2>
-        <p>白盒搭建空间布局，使用PCG生成植被，雕刻自然地形，完成灯光与氛围调试。</p>
-        <video width="100%" controls>
-            <source src="images/forest.mp4" type="video/mp4">
-        </video>
-    </div>
+        <!-- 项目1 写实森林 -->
+        <section class="project">
+            <h2>🌲 写实森林场景</h2>
+            <div class="media">
+                <img src="images/forest_cover.jpg" alt="写实森林场景">
+                <video controls src="images/forest.mp4"></video>
+            </div>
+            <p>UE5次世代写实林间聚落场景。完成地形规划、资产排布与分层光影雾效，依托Nanite、Lumen构建幽深森林氛围，同步完成场景性能优化。</p>
+        </section>
 
-    <div class="work">
-        <h2>❄️ 东方古风雪景场景</h2>
-        <p>参考东方古建筑风格搭建场景，整合雪景资产，调整积雪材质，搭配远山与河流，营造冬日山林静谧氛围。</p>
-        <img src="images/snowscene.jpg" alt="东方古风雪景场景">
-    </div>
+        <!-- 项目2 卡通风格化蒙德山地 -->
+        <section class="project">
+            <h2>⛰️ 卡通风格化蒙德山地场景</h2>
+            <div class="media">
+                <img src="images/style_cover.jpg" alt="卡通风格化蒙德山地场景">
+                <video controls src="images/Stylized0.mp4"></video>
+            </div>
+            <p>UE5卡通风格化山地场景。塑造起伏山地地貌，把控风格化色彩与轮廓，设计近景角色镜头与远景大环境镜头，兼顾空间叙事与大场景性能。</p>
+        </section>
 
-    <div class="work">
-        <h2>🎨 风格化场景</h2>
-        <p>依据参考搭建场景，重组模块化资产，调整材质色彩，塑造远景环境氛围。</p>
-        <img src="images/stylized.jpg" alt="风格化场景">
-    </div>
+        <!-- 项目3 中式雪景古建 -->
+        <section class="project">
+            <h2>🏯 中式雪景古建场景</h2>
+            <div class="media">
+                <img src="images/snow_cover.jpg" alt="中式雪景古建场景">
+            </div>
+            <p>UE5写实东方雪景场景。依托山地高差布局古建，调试积雪材质与冷调光照，搭配落雪粒子，打造清冷静谧的冬日山林空间。</p>
+        </section>
 
-    <div class="contact">
-        <h3>Contact</h3>
-        <p>邮箱：2062962596@qq.com</p>
+        <footer>
+            <p>联系方式：2062962596@qq.com</p>
+        </footer>
     </div>
 </body>
 </html>
